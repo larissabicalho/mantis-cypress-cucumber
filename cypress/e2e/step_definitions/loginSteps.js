@@ -1,27 +1,24 @@
-import {
-  Given,
-  When,
-  Then
-} from "@badeball/cypress-cucumber-preprocessor";
-import {loginPage} from '@pages/LoginPage'
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
+import { LoginPage } from '@pages/LoginPage';
 
- Given("access to mantis website", () => {
-  loginPage.loginToTheSite()
- });
+const loginPage = new LoginPage();
 
-
-When("enter with the user",() => { 
-  loginPage.fillUser(Cypress.config('username')) 
+Given("I have access to the Mantis website", () => {
+  loginPage.loginToTheSite();
 });
 
-When("click log in", () => {
-     loginPage.clickLogin()
+When("I enter the username", () => {
+  loginPage.fillUser(Cypress.config('username'));
 });
 
-When("enter the password", () => {
-   loginPage.fillPassword(Cypress.config('password'))
+When("I click the login button", () => {
+  loginPage.clickLogin();
 });
 
-When("click enter", () => {
-  loginPage.clicarEnter()
+When("I enter the password", () => {
+  loginPage.fillPassword(Cypress.config('password'));
+});
+
+When("I click enter", () => {
+  loginPage.clickEnter();
 });
