@@ -41,17 +41,11 @@ npm install cypress --save-dev
 
 The docker-compose file stay in reposi
 
-8. After processing, if all goes well, the images will be downloaded and new containers created:
+8. After processing, if all goes well, the images will be downloaded and new containers created
 
-![](https://i.imgur.com/TPbVjVQ.png)
+9. To validate the creation and execution of the run the command `docker ps -a` and the containers will be available and running
 
-9. To validate the creation and execution of the run the command `docker ps -a` and the containers will be available and running:
-
-![](https://i.imgur.com/4pZ3IEQ.png)
-
-10. The Docker Desktop application will display the active containers as shown in the image:
-
-![](https://i.imgur.com/tZfGGiZ.png)
+10. The Docker Desktop application will display the active.
 
 
 **Step 3:** 
